@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
     border: none;
     scroll-behavior: smooth;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Landing page */
@@ -47,13 +48,14 @@ header .menu a {
 header .icons {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 /* header section ends */
 
 /* main-banner section starts */
 #main-banner {
-    padding-top: 15em;
+    padding-top: 14.5em;
     text-align: center;
 }
 
@@ -130,20 +132,20 @@ header .icons {
 
 #main-banner .main-search button,
 .main-search button {
-    height: 72%;
-    width: 22%;
+    height: 62%;
+    width: 16%;
     background: #518581;
     color: #fff;
     font-size: 19px;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 16px;
     cursor: pointer;
 }
 
 #main-banner .banner-img {
     width: 85%;
     margin: auto;
-    padding-bottom: 5em;
+    padding-bottom: 10px;
 }
 
 #main-banner .banner-img img {
@@ -156,7 +158,7 @@ header .icons {
 
 /* benefits section starts */
 #benefits {
-    padding: 8em;
+    padding: 10em 8em;
 }
 
 #benefits .benefits-content {
@@ -231,7 +233,7 @@ header .icons {
 
 /* Product Section starts */
 #product {
-    margin: 8em;
+    margin: 0 8em 7em 8em;
 }
 
 #product .product-content {
@@ -304,7 +306,7 @@ header .icons {
 /* main-ProductComponent section starts */
 #main-ProductComponent {
     display: flex;
-    padding: 8em;
+    padding: 5em 8em 6em 8em;
     gap: 4em;
 }
 
@@ -387,7 +389,7 @@ header .icons {
 
 /* Testimonials section starts */
 #testimonials {
-    padding: 8em;
+    padding: 5em 8em 8em 8em;
 }
 
 #testimonials .testimonials-content {
@@ -516,7 +518,7 @@ header .icons {
 
 #footer .down-content {
     border-top: 2px solid rgba(243, 243, 243, 1);
-    padding: 5em 0;
+    padding: 6em 0 5em 0;
     display: flex;
 }
 
@@ -562,12 +564,313 @@ header .icons {
 }
 
 /* Footer section ends */
+/* hamburger icon */
+.fa-times {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+#option {
+    display: none;
+}
+
+/* Responsive view */
+
+@media screen and (max-width:768px) {
+    header {
+        width: 100%;
+        position: unset;
+        padding: 20px 2em;
+        position: fixed;
+    }
+
+    header .menu {
+        position: absolute;
+        bottom: 50em;
+        left: 0;
+        background: #fff;
+        gap: 2em;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .toggle-menu {
+        bottom: -15em;
+    }
+
+    #option {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding-right: 0.5em;
+    }
+
+    #main-banner {
+        padding: 9em 2em 0 2em;
+    }
+
+    #main-banner .title h1 {
+        font-size: 5.2vw;
+    }
+
+    #main-banner .title h1:nth-child(2)::before {
+        right: 5px;
+        bottom: 13px;
+    }
+
+    #main-banner #para {
+        font-size: 14px;
+        inline-size: 33em;
+        padding-top: 1em;
+        padding-bottom: 5em;
+    }
+
+    #main-banner .main-search,
+    .main-search {
+        width: 75%;
+        height: 4.3em;
+    }
+
+    #main-banner .main-search img,
+    .main-search img {
+        width: 25px;
+    }
+
+    #main-banner .main-search button,
+    .main-search button {
+        height: 66%;
+        font-size: 17px;
+        width: 27%;
+    }
+
+    #main-banner .banner-img {
+        width: 97%;
+    }
+
+    #benefits {
+        padding: 6.3em 2.5em 2.2em 2.5em;
+    }
+
+    #benefits .benefits-content .benefits-right-content h2 {
+        font-size: 4.5vw;
+        width: 63%;
+    }
+
+    #benefits .benefits-content .benefits-left-content {
+        padding-top: 1.3rem;
+    }
+
+    #benefits .benefits-content .benefits-left-content p {
+        font-size: 16px;
+    }
+
+    #benefits .benefits-content {
+        padding-bottom: 0;
+    }
+
+    #benefits .benefits-bottom-content {
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+
+    #benefits .benefits-bottom-content .benefits-card {
+        padding: 20px 10px;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    #product {
+        margin: 2em;
+    }
+
+    #product .product-content h1 {
+        font-size: 4.5vw;
+    }
+
+    #product .product-content h1::before {
+        padding-left: 7.3em;
+    }
+
+    #product .product-content p {
+        width: 80%;
+    }
+
+    #product .product-img-container {
+        margin: 0 13px;
+    }
+
+    #product .product-img-container h1,
+    .product-img-container h1 {
+        font-size: 16px;
+    }
+
+    #product .product-img-container h2,
+    .product-img-container h2 {
+        font-size: 23px;
+    }
+
+    #product .product-img-container h3,
+    .product-img-container h3 {
+        font-size: 16px;
+    }
+
+    #product .product-img-container h4,
+    .product-img-container h4 {
+        font-size: 20px;
+    }
+
+    #main-ProductComponent {
+        display: flex;
+        padding: 7em 2em;
+    }
+
+    #main-ProductComponent .left h2 {
+        font-size: 30px;
+        line-height: 0.3em;
+        inline-size: 24em;
+        margin-bottom: 1.3em;
+    }
+
+    #main-ProductComponent .left p {
+        font-size: 16px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    #main-ProductComponent .left .btn {
+        font-size: 17px;
+        font-weight: 600;
+        height: 2.8em;
+        width: 98%;
+        margin: 1.5em 0em 8em 0;
+    }
+
+    #main-ProductComponent {
+        flex-wrap: wrap;
+        position: relative;
+        gap: 2em;
+        padding: 7em 2em 4em 2em;
+    }
+
+    #main-ProductComponent .right .rating {
+        position: absolute;
+        top: 21em;
+        left: 2em;
+    }
+
+    #main-ProductComponent .right .rating .block h4 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    #main-ProductComponent .right .rating .block p {
+        font-size: 15px;
+    }
+
+    #main-ProductComponent .left-img {
+        width: 98%;
+    }
+
+    #main-ProductComponent .right .right-img {
+        width: 118%;
+    }
+
+    #main-ProductComponent .right .right-img img {
+        width: 100%;
+    }
+
+    #testimonials {
+        padding: 3em 2em 1.5em 2em
+    }
+
+    #testimonials .testimonials-content {
+        width: 80%;
+    }
+
+    #testimonials .testimonials-content h1::before {
+        padding-left: 6em;
+    }
+
+    #testimonials .testimonials-content h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    #testimonials .testimonials-content p {
+        font-size: 16px;
+        width: 100%;
+        padding: 1em 0;
+    }
+
+    #testimonials .testimonials-container {
+        flex-direction: column;
+    }
+
+    #testimonials .testimonials-container .testimonials-box {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    #testimonials .testimonials-container .testimonials-box p {
+        font-size: 16px;
+        padding: 1.4em 0;
+    }
+
+    #testimonials .testimonials-container .testimonials-box .author .author-info h1 {
+        font-size: 19px;
+    }
+
+    #testimonials .testimonials-container .testimonials-box .ratings h2 {
+        font-size: 17px;
+    }
+
+    #footer {
+        margin: 3em 2.5em;
+    }
+
+    #footer .above-content {
+        flex-direction: column;
+        padding-bottom: 3em;
+    }
+
+    #footer .above-content h1 {
+        font-size: 33px;
+        font-weight: 600;
+        padding-bottom: 17px;
+    }
+
+    #footer .above-content .above-right-content {
+        font-size: 16px;
+        width: 29%;
+        gap: 15px;
+    }
+
+    #footer .above-content .above-right-content button {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #footer .down-content {
+        padding: 2.5em 0;
+    }
+
+    #footer .down-content .down-left-content p {
+        font-size: 16px;
+        width: 63%;
+    }
+
+    #footer .down-content .down-right-content {
+        width: 95%;
+    }
+}
+
+
 
 /* Product page */
 /* Product section */
-#Product,
-.about-page-section {
-    padding-top: 15em;
+#Product {
+    padding-top: 14.5em;
     padding-bottom: 3em;
 }
 
@@ -689,7 +992,6 @@ header .icons {
     font-weight: 700;
     line-height: 57px;
     width: 50%;
-    padding-bottom: 2em;
 }
 
 .sort {
@@ -740,7 +1042,8 @@ header .icons {
     margin: auto;
     width: 22%;
     text-align: center;
-    padding: 5em 0;
+    padding-top: 10em;
+    padding-bottom: 2em;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -773,7 +1076,7 @@ header .icons {
 /* Services Page  starts */
 #service-heading {
     text-align: center;
-    padding-top: 15em;
+    padding-top: 14.5em;
 }
 
 #service-heading h2 {
@@ -788,13 +1091,13 @@ header .icons {
     display: inline-block;
     width: 35%;
     line-height: 1.6em;
-    margin: 1em 0 2.3em 0;
+    margin: 1em 0 2em 0;
 }
 
 /* Banner Image  */
 .service-img {
     margin: auto;
-    width: 88%;
+    width: 85%;
 }
 
 .service-img img {
@@ -809,11 +1112,11 @@ header .icons {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 15em);
     gap: 1em 3em;
-    padding: 1em 0em 11em 0em;
+    padding: 3em 0em 11em 0em;
     border-top: 2px solid #F3F3F3;
-    margin: auto;
+    margin: 0 8em;
     margin-top: 2.4em;
-    width: 88%;
+    width: 85%;
 }
 
 #service-dis .block h3 {
@@ -841,12 +1144,12 @@ header .icons {
 /* Portfolio Section  */
 #service-port {
     padding-bottom: 7em;
+    margin: 0 8em;
 }
 
 #service-port .port-heading {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -879,6 +1182,7 @@ header .icons {
     font-weight: 500;
     text-wrap: balance;
     inline-size: 28em;
+    padding-top: 9px;
 }
 
 #service-port .port-heading .right a {
@@ -889,11 +1193,11 @@ header .icons {
 
 #service-port .component {
     display: grid;
-    grid-template-columns: 42% 55%;
+    grid-template-columns: 42% 56%;
     grid-template-rows: 50% 50%;
     gap: 2em;
     height: 79vh;
-    width: 90%;
+    width: 100%;
     margin: 3em auto;
 }
 
@@ -967,6 +1271,15 @@ header .icons {
 
 /* About us page */
 
+.about-page-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 14.5em;
+}
+
 .about-page-section p {
     width: 55%;
     margin: auto;
@@ -974,18 +1287,9 @@ header .icons {
     font-size: 18px;
     font-weight: 500;
     line-height: 32px;
-    padding: 2em 0;
+    padding: 1.2em 0 2em 0;
 }
 
-.about-page-section {
-    text-align: center;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 15em;
-}
 
 .about-page-section .content .content--heading {
     font-size: 64px;
@@ -994,8 +1298,7 @@ header .icons {
 }
 
 .about-img {
-    padding: 50px 137px 200px 137px;
-    margin-top: -5em;
+    padding: 0 8em 11.5em 8em;
 }
 
 .about-img img {
@@ -1008,7 +1311,7 @@ header .icons {
 
 /* mission section */
 .mission--section {
-    padding: 0 137px;
+    margin: 0 8em;
     display: grid;
     grid-template-columns: 40% 50%;
     gap: 150px;
@@ -1099,7 +1402,7 @@ header .icons {
 /* team section */
 
 .team {
-    padding: 100px 134px;
+    margin: 5em 8em;
 }
 
 .team .team--section {
