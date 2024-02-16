@@ -1387,12 +1387,50 @@ header .icons {
         margin: 0;
     }
 
-    #service-port .port-heading {
-        flex-direction: column;
+    .service-img {
+        margin: 0 2em;
     }
 
     #service-dis {
         margin: 0 2em;
+        grid-template-rows: repeat(2, 21em);
+        gap: 1em 2em;
+        padding: 3em 0em 5em 0em;
+    }
+
+    #service-dis .block h3 {
+        font-size: 5.5vw;
+    }
+
+    #service-dis .block h5 {
+        font-size: 18px;
+    }
+
+    #service-dis .block .para {
+        font-size: 16px;
+    }
+
+    #service-port {
+        margin: 0 2em;
+    }
+
+    #service-port .port-heading {
+        flex-direction: column;
+    }
+
+    #service-port .port-heading .left h2 {
+        font-size: 4.5vw;
+        inline-size: 19em;
+    }
+
+    #service-port .port-heading .right p {
+        font-size: 16px;
+        text-wrap: unset;
+        inline-size: 42em;
+    }
+
+    #service-port .port-heading .right a {
+        font-size: 16px;
     }
 }
 
@@ -1435,8 +1473,38 @@ header .icons {
     height: auto;
 }
 
+/* Responsive view */
+@media screen and (max-width: 768px) {
+    .about-page-section {
+        padding-top: 9em;
+    }
 
-/* About-page ends */
+    .about-page-section .content .content--heading {
+        font-size: 5.5vw;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .about-page-section .content .content--paragraph {
+        width: 58%;
+        font-size: 16px;
+        padding-top: 0;
+        padding-bottom: 0.4em;
+    }
+
+    .about-img {
+        margin: 0 2em 5em 2em;
+        padding: 0;
+    }
+
+    .mission--section {
+        margin: 8em 2em;
+        grid-template-columns: 40% 50%;
+        gap: 3em;
+    }
+}
+
+/* About section ends */
 
 /* mission section */
 .mission--section {
