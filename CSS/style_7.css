@@ -595,14 +595,17 @@ header .icons {
     }
 
     header .toggle-menu {
-        bottom: -15em;
+        bottom: -14.5em;
+    }
+
+    header .icons {
+        padding-right: 0.5em;
     }
 
     #option {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        padding-right: 0.5em;
     }
 
     #main-banner {
@@ -679,6 +682,15 @@ header .icons {
         margin-bottom: 2em;
     }
 
+    #benefits .benefits-bottom-content .benefits-card h3 {
+        font-size: 22px;
+    }
+
+    #benefits .benefits-bottom-content .benefits-card p {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
     #product {
         margin: 2em;
     }
@@ -693,20 +705,22 @@ header .icons {
 
     #product .product-content p {
         width: 80%;
+        font-size: 16px;
     }
 
     #product .product-img-container {
-        margin: 0 13px;
+        margin: 0 10px;
     }
 
     #product .product-img-container h1,
     .product-img-container h1 {
         font-size: 16px;
+        font-weight: 600;
     }
 
     #product .product-img-container h2,
     .product-img-container h2 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     #product .product-img-container h3,
@@ -719,15 +733,9 @@ header .icons {
         font-size: 20px;
     }
 
-    #main-ProductComponent {
-        display: flex;
-        padding: 7em 2em;
-    }
-
     #main-ProductComponent .left h2 {
-        font-size: 30px;
-        line-height: 0.3em;
-        inline-size: 24em;
+        font-size: 4.5vw;
+        inline-size: 19em;
         margin-bottom: 1.3em;
     }
 
@@ -755,7 +763,7 @@ header .icons {
 
     #main-ProductComponent .right .rating {
         position: absolute;
-        top: 21em;
+        top: 26.5em;
         left: 2em;
     }
 
@@ -773,7 +781,7 @@ header .icons {
     }
 
     #main-ProductComponent .right .right-img {
-        width: 118%;
+        width: 116%;
     }
 
     #main-ProductComponent .right .right-img img {
@@ -789,11 +797,11 @@ header .icons {
     }
 
     #testimonials .testimonials-content h1::before {
-        padding-left: 6em;
+        padding-left: 7.5em;
     }
 
     #testimonials .testimonials-content h1 {
-        font-size: 30px;
+        font-size: 4.5vw;
         width: 100%;
     }
 
@@ -808,13 +816,13 @@ header .icons {
     }
 
     #testimonials .testimonials-container .testimonials-box {
-        width: 100%;
+        width: 99%;
         margin: 1em 0;
     }
 
     #testimonials .testimonials-container .testimonials-box p {
         font-size: 16px;
-        padding: 1.4em 0;
+        padding: 1em 0;
     }
 
     #testimonials .testimonials-container .testimonials-box .author .author-info h1 {
@@ -826,7 +834,7 @@ header .icons {
     }
 
     #footer {
-        margin: 3em 2.5em;
+        margin: 3em 2.7em 3em 2.5em;
     }
 
     #footer .above-content {
@@ -835,8 +843,7 @@ header .icons {
     }
 
     #footer .above-content h1 {
-        font-size: 33px;
-        font-weight: 600;
+        font-size: 4.5vw;
         padding-bottom: 17px;
     }
 
@@ -862,6 +869,15 @@ header .icons {
 
     #footer .down-content .down-right-content {
         width: 95%;
+    }
+
+    #footer .down-content .down-right-content .column h2 {
+        padding: 0.3em 0;
+        font-size: 19px;
+    }
+
+    #footer .down-content .down-right-content .column li a {
+        font-size: 16px;
     }
 }
 
@@ -1073,6 +1089,88 @@ header .icons {
 
 /* allproduct section ends */
 
+/* Responsive view */
+
+@media screen and (max-width:768px) {
+    #Product {
+        padding-top: 9em;
+        padding-bottom: 2em;
+    }
+
+    #Product .main-content h1,
+    .about-page-section h2 {
+        font-size: 5.5vw;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+
+    #Product .main-content p {
+        width: 58%;
+        font-size: 16px;
+        padding-top: 0;
+        padding-bottom: 1.4em;
+    }
+
+    #Product .img-container-content {
+        padding-left: 3em;
+    }
+
+    #Product .img-container-content a {
+        width: 15%;
+        padding: 8px 15px;
+    }
+
+    #Product .img-container-content h2 {
+        font-size: 4.5vw;
+        margin-bottom: 9px;
+    }
+
+    #Product .img-container-content p {
+        color: #fff;
+        font-size: 20px;
+        width: 56%;
+    }
+
+    .search-bar {
+        height: 4em;
+    }
+
+    #allproduct {
+        padding: 5.2em 2.5em 4em 2.5em;
+    }
+
+    #allproduct .heading h1 {
+        font-size: 4.5vw;
+    }
+
+    .sort {
+        margin-right: 10px;
+    }
+
+    .product-img-container {
+        place-items: unset;
+        padding-top: 2em;
+        gap: 5em 1.5em;
+    }
+
+    #allproduct .product-img-container .image {
+        width: 100%;
+        height: 60%;
+    }
+
+    #allproduct .boxes {
+        width: 44%;
+        padding-top: 7em;
+        padding-bottom: 0;
+    }
+
+    #allproduct .boxes button {
+
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
 /* Services Page  starts */
 #service-heading {
     text-align: center;
@@ -1265,6 +1363,37 @@ header .icons {
 #service-port .component .card .show {
     white-space: normal;
     overflow-x: unset;
+}
+
+/* Responsive view */
+
+@media screen and (max-width:768px) {
+    #service-heading {
+        padding-top: 9em;
+        padding-bottom: 2em;
+    }
+
+    #service-heading h2 {
+        font-size: 5.5vw;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+
+    #service-heading .para {
+        width: 58%;
+        font-size: 16px;
+        padding-top: 0;
+        padding-bottom: 1.4em;
+        margin: 0;
+    }
+
+    #service-port .port-heading {
+        flex-direction: column;
+    }
+
+    #service-dis {
+        margin: 0 2em;
+    }
 }
 
 /* Services page ends */
