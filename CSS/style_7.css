@@ -574,12 +574,615 @@ header .icons {
     display: none;
 }
 
-/* Responsive view */
 
+
+
+
+/* Product page */
+/* Product section */
+#Product {
+    padding-top: 14.5em;
+    padding-bottom: 3em;
+}
+
+#Product .main-content {
+    text-align: center;
+}
+
+#Product .main-content h1,
+.about-page-section h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 83px;
+
+}
+
+#Product .main-content p {
+    color: #AFADB5;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    width: 40%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+#Product .img-container-content {
+    width: 100%;
+    height: 70vh;
+    background: url("../images_7/Product-banner.webp") center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6em;
+    gap: 1em;
+}
+
+#Product .img-container-content a {
+    background: #518581;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+    color: #fff;
+    width: 7%;
+}
+
+#Product .img-container-content h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#Product .img-container-content p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    opacity: 0.7;
+    width: 29%;
+}
+
+/* Product section ends */
+
+/* Search-bar section starts */
+.search-bar {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 6em;
+    place-items: center;
+    width: 85%;
+    margin: auto;
+    gap: 1em;
+    padding-bottom: 3em;
+}
+
+.search-bar .main-search {
+    margin: unset;
+    width: 100%;
+}
+
+.filter {
+    box-shadow: 0px 4px 120px 0px rgba(175, 173, 181, 0.15);
+    height: 100%;
+    background: #fff;
+    display: grid;
+    width: 100%;
+}
+
+.filter button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: unset;
+    gap: 12px
+}
+
+.filter button p {
+    color: rgba(21, 20, 17, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+/* Search-bar section ends */
+
+/*  Allproduct section starts */
+#allproduct {
+    padding: 5em 8em;
+}
+
+#allproduct .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+#allproduct .heading h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57px;
+    width: 50%;
+}
+
+.sort {
+    box-shadow: 0px 4px 120px 0px rgba(175, 173, 181, 0.15);
+    height: 100%;
+    background: #fff;
+    display: grid;
+    width: 19%;
+    padding-left: 9px;
+}
+
+.sort button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: unset;
+    gap: 12px;
+    padding: 17px 16px;
+    cursor: pointer;
+}
+
+.sort button p {
+    color: rgba(21, 20, 17, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.product-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2em;
+}
+
+.product-img-container .image {
+    width: 100%;
+    height: 70%;
+}
+
+.product-img-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#allproduct .boxes {
+    margin: auto;
+    width: 22%;
+    text-align: center;
+    padding-top: 10em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#allproduct .boxes button {
+    background: unset;
+    width: 4em;
+    height: 4em;
+    border: 2px solid #ffffffcc;
+    cursor: pointer;
+    color: #151411;
+}
+
+#allproduct .boxes button:nth-child(2) {
+    background: #518581;
+    color: #fff;
+}
+
+#allproduct .boxes button a {
+    color: #fff;
+}
+
+#allproduct .boxes img {
+    padding: 0 7px;
+}
+
+/* allproduct section ends */
+
+/* Services Page  starts */
+#service-heading {
+    text-align: center;
+    padding-top: 14.5em;
+}
+
+#service-heading h2 {
+    color: #151411;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+#service-heading .para {
+    color: #AFADB5;
+    font-size: 18px;
+    display: inline-block;
+    width: 35%;
+    line-height: 1.6em;
+    margin: 1em 0 2em 0;
+}
+
+/* Banner Image  */
+.service-img {
+    margin: auto;
+    width: 85%;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Discription Section  */
+#service-dis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 15em);
+    gap: 1em 3em;
+    padding: 3em 0em 11em 0em;
+    border-top: 2px solid #F3F3F3;
+    margin: 0 8em;
+    margin-top: 2.4em;
+    width: 85%;
+}
+
+#service-dis .block h3 {
+    color: #518581;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#service-dis .block {
+    display: grid;
+}
+
+#service-dis .block h5 {
+    color: #151411;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#service-dis .block .para {
+    color: #AFADB5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Portfolio Section  */
+#service-port {
+    padding-bottom: 7em;
+    margin: 0 8em;
+}
+
+#service-port .port-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#service-port .port-heading .left h2 {
+    color: #151411;
+    font-size: 44px;
+    font-weight: 700;
+    inline-size: 13em;
+    position: relative;
+}
+
+#service-port .port-heading .left h2::before {
+    content: 'Portofolio';
+    color: #FFB23F;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+}
+
+#service-port .port-heading .right {
+    height: 100%;
+    display: grid;
+}
+
+#service-port .port-heading .right p {
+    color: #AFADB5;
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: balance;
+    inline-size: 28em;
+    padding-top: 9px;
+}
+
+#service-port .port-heading .right a {
+    color: #518581;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#service-port .component {
+    display: grid;
+    grid-template-columns: 42% 56%;
+    grid-template-rows: 50% 50%;
+    gap: 2em;
+    height: 79vh;
+    width: 100%;
+    margin: 3em auto;
+}
+
+#service-port .component .card:nth-child(1) {
+    background: url('../images_7/port-img1.webp');
+    grid-area: 1 / 1 / 3 / 2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#service-port .component .card:nth-child(2) {
+    background: url('../images_7/port-img2.webp');
+    grid-area: 1 / 2 / 2 / 3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#service-port .component .card:nth-child(3) {
+    background: url('../images_7/port-img3.webp');
+    grid-area: 2 / 2 / 3 / 3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#service-port .component .card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 2em;
+}
+
+#service-port .component .card h4 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.01625rem;
+}
+
+#service-port .component .card p {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    inline-size: 25.3em;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+#service-port .component .card #show {
+    color: #ffffff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#service-port .component .card .show {
+    white-space: normal;
+    overflow-x: unset;
+}
+
+
+
+/* About section ends */
+
+/* mission section */
+.mission--section {
+    margin: 0 8em;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 150px;
+    position: relative;
+    padding-bottom: 6em;
+}
+
+.top--content .lefttop-content .heading,
+.heading {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.mission--section .top--content .lefttop-content h2::before {
+    content: "Our Mission";
+    font-size: 19px;
+    font-weight: 700;
+    color: #FFB23F;
+    top: -61px;
+    position: absolute;
+}
+
+.top--content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 0;
+}
+
+.mission--section .top--content .leftbottom-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.num h3 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 57.2px;
+    color: #151411;
+}
+
+.num p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32.4px;
+    color: #AFADB5;
+}
+
+.mission--left--content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission--left--content .aboutus {
+    display: flex;
+    align-items: self-start;
+    gap: 30px;
+}
+
+.mission--left--content .aboutus img {
+    padding: 15px;
+    background: #F9F9F9;
+    border-radius: 50%;
+}
+
+.mission--left--content .aboutus div h4 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 33.2px;
+    color: #151411;
+}
+
+.mission--left--content .aboutus div p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32.4px;
+    color: #AFADB5;
+}
+
+/* mission section ends */
+/* About us page ends */
+
+/* team section */
+
+.team {
+    margin: 5em 8em;
+}
+
+.team .team--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .team--section .team-right p {
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 500;
+    color: #AFADB5;
+    padding-left: 24em;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.team-container .team-card {
+    width: 100%;
+    height: 100%;
+}
+
+.team-container .team-card img {
+    width: 100%;
+}
+
+.team-container .team-card h2 {
+    font-size: 26px;
+    line-height: 32.4px;
+    font-weight: 600;
+    color: #151411;
+    padding: 15px 0 5px;
+    margin-bottom: 0;
+}
+
+.team-container .team-card p {
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 500;
+    color: #AFADB5;
+}
+
+.team .team-left .heading {
+    position: relative;
+}
+
+.team .team-left .heading::before {
+    content: "Our Team";
+    font-size: 19px;
+    font-weight: 700;
+    color: #FFB23F;
+    top: -61px;
+    position: absolute;
+}
+
+/* Team section ends */
+/* About us pade ends */
+
+/* Services page ends */
+
+/* About us page */
+
+.about-page-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 14.5em;
+}
+
+.about-page-section p {
+    width: 55%;
+    margin: auto;
+    color: #AFADB5;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 1.2em 0 2em 0;
+}
+
+
+.about-page-section .content .content--heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 83px;
+}
+
+.about-img {
+    padding: 0 8em 11.5em 8em;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive view */
 @media screen and (max-width:768px) {
     header {
         width: 100%;
-        position: unset;
         padding: 20px 2em;
         position: fixed;
     }
@@ -880,217 +1483,6 @@ header .icons {
         font-size: 16px;
     }
 }
-
-
-
-/* Product page */
-/* Product section */
-#Product {
-    padding-top: 14.5em;
-    padding-bottom: 3em;
-}
-
-#Product .main-content {
-    text-align: center;
-}
-
-#Product .main-content h1,
-.about-page-section h2 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 83px;
-
-}
-
-#Product .main-content p {
-    color: #AFADB5;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-    width: 40%;
-    margin: auto;
-    padding: 2em 0;
-}
-
-#Product .img-container-content {
-    width: 100%;
-    height: 70vh;
-    background: url("../images_7/Product-banner.webp") center center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 6em;
-    gap: 1em;
-}
-
-#Product .img-container-content a {
-    background: #518581;
-    border-radius: 16px;
-    padding: 8px 16px 8px 16px;
-    color: #fff;
-    width: 7%;
-}
-
-#Product .img-container-content h2 {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 57px;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-#Product .img-container-content p {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 31px;
-    opacity: 0.7;
-    width: 29%;
-}
-
-/* Product section ends */
-
-/* Search-bar section starts */
-.search-bar {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    height: 6em;
-    place-items: center;
-    width: 85%;
-    margin: auto;
-    gap: 1em;
-    padding-bottom: 3em;
-}
-
-.search-bar .main-search {
-    margin: unset;
-    width: 100%;
-}
-
-.filter {
-    box-shadow: 0px 4px 120px 0px rgba(175, 173, 181, 0.15);
-    height: 100%;
-    background: #fff;
-    display: grid;
-    width: 100%;
-}
-
-.filter button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: unset;
-    gap: 12px
-}
-
-.filter button p {
-    color: rgba(21, 20, 17, 1);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-    cursor: pointer;
-}
-
-/* Search-bar section ends */
-
-/*  Allproduct section starts */
-#allproduct {
-    padding: 5em 8em;
-}
-
-#allproduct .heading {
-    display: flex;
-    justify-content: space-between;
-}
-
-#allproduct .heading h1 {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 57px;
-    width: 50%;
-}
-
-.sort {
-    box-shadow: 0px 4px 120px 0px rgba(175, 173, 181, 0.15);
-    height: 100%;
-    background: #fff;
-    display: grid;
-    width: 19%;
-    padding-left: 9px;
-}
-
-.sort button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: unset;
-    gap: 12px;
-    padding: 17px 16px;
-    cursor: pointer;
-}
-
-.sort button p {
-    color: rgba(21, 20, 17, 1);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-}
-
-.product-img-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    gap: 2em;
-}
-
-.product-img-container .image {
-    width: 100%;
-    height: 70%;
-}
-
-.product-img-container .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#allproduct .boxes {
-    margin: auto;
-    width: 22%;
-    text-align: center;
-    padding-top: 10em;
-    padding-bottom: 2em;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
-
-#allproduct .boxes button {
-    background: unset;
-    width: 4em;
-    height: 4em;
-    border: 2px solid #ffffffcc;
-    cursor: pointer;
-    color: #151411;
-}
-
-#allproduct .boxes button:nth-child(2) {
-    background: #518581;
-    color: #fff;
-}
-
-#allproduct .boxes button a {
-    color: #fff;
-}
-
-#allproduct .boxes img {
-    padding: 0 7px;
-}
-
-/* allproduct section ends */
-
-/* Responsive view */
-
 @media screen and (max-width:768px) {
     #Product {
         padding-top: 9em;
@@ -1171,202 +1563,6 @@ header .icons {
     }
 }
 
-/* Services Page  starts */
-#service-heading {
-    text-align: center;
-    padding-top: 14.5em;
-}
-
-#service-heading h2 {
-    color: #151411;
-    font-weight: 700;
-    font-size: 64px;
-}
-
-#service-heading .para {
-    color: #AFADB5;
-    font-size: 18px;
-    display: inline-block;
-    width: 35%;
-    line-height: 1.6em;
-    margin: 1em 0 2em 0;
-}
-
-/* Banner Image  */
-.service-img {
-    margin: auto;
-    width: 85%;
-}
-
-.service-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Discription Section  */
-#service-dis {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 15em);
-    gap: 1em 3em;
-    padding: 3em 0em 11em 0em;
-    border-top: 2px solid #F3F3F3;
-    margin: 0 8em;
-    margin-top: 2.4em;
-    width: 85%;
-}
-
-#service-dis .block h3 {
-    color: #518581;
-    font-size: 64px;
-    font-weight: 700;
-}
-
-#service-dis .block {
-    display: grid;
-}
-
-#service-dis .block h5 {
-    color: #151411;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-#service-dis .block .para {
-    color: #AFADB5;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-/* Portfolio Section  */
-#service-port {
-    padding-bottom: 7em;
-    margin: 0 8em;
-}
-
-#service-port .port-heading {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#service-port .port-heading .left h2 {
-    color: #151411;
-    font-size: 44px;
-    font-weight: 700;
-    inline-size: 13em;
-    position: relative;
-}
-
-#service-port .port-heading .left h2::before {
-    content: 'Portofolio';
-    color: #FFB23F;
-    font-size: 18px;
-    font-weight: 700;
-    position: absolute;
-    top: -1.5em;
-    left: 0;
-}
-
-#service-port .port-heading .right {
-    height: 100%;
-    display: grid;
-}
-
-#service-port .port-heading .right p {
-    color: #AFADB5;
-    font-size: 18px;
-    font-weight: 500;
-    text-wrap: balance;
-    inline-size: 28em;
-    padding-top: 9px;
-}
-
-#service-port .port-heading .right a {
-    color: #518581;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-#service-port .component {
-    display: grid;
-    grid-template-columns: 42% 56%;
-    grid-template-rows: 50% 50%;
-    gap: 2em;
-    height: 79vh;
-    width: 100%;
-    margin: 3em auto;
-}
-
-#service-port .component .card:nth-child(1) {
-    background: url('../images_7/port-img1.webp');
-    grid-area: 1 / 1 / 3 / 2;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#service-port .component .card:nth-child(2) {
-    background: url('../images_7/port-img2.webp');
-    grid-area: 1 / 2 / 2 / 3;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#service-port .component .card:nth-child(3) {
-    background: url('../images_7/port-img3.webp');
-    grid-area: 2 / 2 / 3 / 3;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#service-port .component .card {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 2em;
-}
-
-#service-port .component .card h4 {
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.01625rem;
-}
-
-#service-port .component .card p {
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    inline-size: 25.3em;
-    font-size: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    opacity: 0.7;
-}
-
-#service-port .component .card #show {
-    color: #ffffff;
-    background: transparent;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-#service-port .component .card .show {
-    white-space: normal;
-    overflow-x: unset;
-}
-
-/* Responsive view */
-
 @media screen and (max-width:768px) {
     #service-heading {
         padding-top: 9em;
@@ -1433,47 +1629,6 @@ header .icons {
         font-size: 16px;
     }
 }
-
-/* Services page ends */
-
-/* About us page */
-
-.about-page-section {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 14.5em;
-}
-
-.about-page-section p {
-    width: 55%;
-    margin: auto;
-    color: #AFADB5;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-    padding: 1.2em 0 2em 0;
-}
-
-
-.about-page-section .content .content--heading {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 83px;
-}
-
-.about-img {
-    padding: 0 8em 11.5em 8em;
-}
-
-.about-img img {
-    width: 100%;
-    height: auto;
-}
-
-/* Responsive view */
 @media screen and (max-width: 768px) {
     .about-page-section {
         padding-top: 9em;
@@ -1503,163 +1658,3 @@ header .icons {
         gap: 3em;
     }
 }
-
-/* About section ends */
-
-/* mission section */
-.mission--section {
-    margin: 0 8em;
-    display: grid;
-    grid-template-columns: 40% 50%;
-    gap: 150px;
-    position: relative;
-    padding-bottom: 6em;
-}
-
-.top--content .lefttop-content .heading,
-.heading {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 57px;
-}
-
-.mission--section .top--content .lefttop-content h2::before {
-    content: "Our Mission";
-    font-size: 19px;
-    font-weight: 700;
-    color: #FFB23F;
-    top: -61px;
-    position: absolute;
-}
-
-.top--content {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding-bottom: 0;
-}
-
-.mission--section .top--content .leftbottom-content {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.num h3 {
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 57.2px;
-    color: #151411;
-}
-
-.num p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32.4px;
-    color: #AFADB5;
-}
-
-.mission--left--content {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.mission--left--content .aboutus {
-    display: flex;
-    align-items: self-start;
-    gap: 30px;
-}
-
-.mission--left--content .aboutus img {
-    padding: 15px;
-    background: #F9F9F9;
-    border-radius: 50%;
-}
-
-.mission--left--content .aboutus div h4 {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 33.2px;
-    color: #151411;
-}
-
-.mission--left--content .aboutus div p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32.4px;
-    color: #AFADB5;
-}
-
-/* mission section ends */
-/* About us page ends */
-
-/* team section */
-
-.team {
-    margin: 5em 8em;
-}
-
-.team .team--section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.team .team--section .team-right p {
-    font-size: 18px;
-    line-height: 32.4px;
-    font-weight: 500;
-    color: #AFADB5;
-    padding-left: 24em;
-}
-
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    padding-top: 50px;
-}
-
-.team-container .team-card {
-    width: 100%;
-    height: 100%;
-}
-
-.team-container .team-card img {
-    width: 100%;
-}
-
-.team-container .team-card h2 {
-    font-size: 26px;
-    line-height: 32.4px;
-    font-weight: 600;
-    color: #151411;
-    padding: 15px 0 5px;
-    margin-bottom: 0;
-}
-
-.team-container .team-card p {
-    font-size: 18px;
-    line-height: 32.4px;
-    font-weight: 500;
-    color: #AFADB5;
-}
-
-.team .team-left .heading {
-    position: relative;
-}
-
-.team .team-left .heading::before {
-    content: "Our Team";
-    font-size: 19px;
-    font-weight: 700;
-    color: #FFB23F;
-    top: -61px;
-    position: absolute;
-}
-
-/* Team section ends */
-/* About us pade ends */
